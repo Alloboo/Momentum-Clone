@@ -1,15 +1,17 @@
 const quotes = [
     {
         quote: `They don't make bugs like Bunny anymore.`,
-        author: `Olav Mjelde.`
+        author: `_Olav Mjelde.`
     },
     {
-        quote: `Don't worry if it doesn't work right. If everything did, you'd be out of a job.`,
-        author: `Eric S. Raymond`
+        quote: `Don't worry if it doesn't work right.
+        If everything did, you'd be out of a job.`,
+        author: `_Eric S. Raymond`
     },
     {
-        quote: `Most of you are familiar with the virtues of a programmer. There are three, of course: laziness, impatience, and hubris.`,
-        author: `Larry Wall`,
+        quote: `Most of you are familiar with the virtues of a programmer.
+        There are three, of course: laziness, impatience, and hubris.`,
+        author: `_Larry Wall`,
     }
 ]
 

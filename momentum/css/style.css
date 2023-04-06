@@ -1,3 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .hidden {
     display: none;
+}
+
+.bgImage {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -99;
+    opacity: 90%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+
+    color: #F5F5F5;
+}
+
+#clock {
+    padding-right: 20px;
+    ;
+}
+
+#weather {
+    height: 22px;
+    padding-right: 20px;
+}
+
+main {
+    width: 100%;
+    height: 550px;
+
+    text-align: center;
+
+    color: #212121;
+}
+
+#login-form p {
+    padding: 100px 0 0 0;
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+#login-form input {
+    height: 50px;
+    width: 45%;
+    margin: 0 auto;
+    padding: 20px 0 10px 0;
+
+    display: block;
+    background: 0;
+    outline: transparent;
+    border: 0;
+    border-bottom: 3px solid whitesmoke;
+
+    color: whitesmoke;
+    font-size: 40px;
+    text-align: center;
+}
+
+#todo-form input {
+    height: 50px;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 0;
+
+    display: block;
+    background: 0;
+    outline: transparent;
+    border: 0;
+    border-bottom: 3px solid whitesmoke;
+
+    color: whitesmoke;
+    font-size: 15px;
+    text-align: center;
+}
+
+#greeting {
+    font-size: 100px;
+}
+
+#quote {
+    padding: 200px 0 0 0;
+
+    color: #212121;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+
+    font-family: monospace;
+    font-weight: lighter;
+    color: #EEEEEE;
+
+    text-align: center;
+}
+
+footer p {
+    display: inline;
+}
+
+footer a {
+    text-decoration: none;
+    color: #EEEEEE;
 }

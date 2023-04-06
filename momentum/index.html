@@ -10,28 +10,40 @@
 </head>
 
 <body>
-    <form id="login-form" class="hidden">
-        <input 
-            required maxlength="15" 
-            type="text" 
-            placeholder="What is your name?"
-        >
-        <input type="submit" value="Log In">
-    </form>
-    <h2 id="clock">00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required>
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-        <span></span>
-        <span></span>
-    </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
+    <header>
+        <h2 id="clock">00:00</h2>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main>
+        <form id="login-form" class="hidden">
+            <p>Hello, what's your name?</p>
+            <input maxlength="15" type="text" required >
+        </form>
+
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form" class="hidden">
+            <input type="text" placeholder="Write a To Do and Press Enter" required>
+        </form>
+        <ul id="todo-list"></ul>
+        <div id="quote">
+            <span></span>
+            <span></span>
+        </div>
+    </main>
+    <footer>
+        <p>image source from Freepik</p>
+        <a
+            href="https://kr.freepik.com/free-photo/bw-greek-statue-image-in-torn-paper-style-remixed-media_17227711.htm#&position=7&from_view=collections">1</a>
+        <a
+            href="https://kr.freepik.com/free-photo/natural-and-abstract-shadow-details_21090444.htm#&position=6&from_view=collections">2</a>
+        <a
+            href="https://kr.freepik.com/free-photo/white-marble-product-backdrop-wall_15557704.htm#&position=1&from_view=collections#position=1">3</a>
+        <a
+            href="https://kr.freepik.com/free-photo/marble-product-backdrop-with-blank-space_17121288.htm#&position=0&from_view=collections">4</a>
+    </footer>
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
