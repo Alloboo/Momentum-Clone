@@ -87,7 +87,7 @@ main {
 
 #login-form input {
     height: 50px;
-    width: 45%;
+    width: 30%;
     margin: 0 auto;
     padding: 20px 0 10px 0;
 
@@ -98,13 +98,20 @@ main {
     border-bottom: 3px solid whitesmoke;
 
     color: whitesmoke;
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
+}
+
+#greeting {
+    text-align: center;
+    font-size: 50px;
+
+    color: whitesmoke;
 }
 
 #todo-form input {
     height: 50px;
-    width: 40%;
+    width: 30%;
     margin: 20px auto;
     padding: 10px 0 0 0;
 
@@ -158,13 +165,6 @@ main {
     color: whitesmoke;
 
     cursor: pointer;
-}
-
-#greeting {
-    text-align: center;
-    font-size: 50px;
-
-    color: whitesmoke;
 }
 
 #quote {
