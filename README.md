@@ -29,9 +29,10 @@ Implemented Features
 
 
 
-5. weather
+5. weather&present region
 
 - Current weather by useing weather API
+- the present region
 
 
 
