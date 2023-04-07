@@ -2,7 +2,21 @@
     margin: 0;
     padding: 0;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.fade {
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .hidden {
@@ -20,11 +34,8 @@
     bottom: 0;
     z-index: -99;
     opacity: 90%;
-}
 
-body {
-    width: 100%;
-    height: 100%;
+    filter: brightness(90%);
 }
 
 header {
@@ -36,32 +47,42 @@ header {
     justify-content: flex-end;
     text-align: right;
 
-    color: #F5F5F5;
+    color: #f5f5f598;
 }
 
 #clock {
-    padding-right: 20px;
-    ;
+    margin-right: 40px;
+
+    font-size: 15px;
 }
 
 #weather {
     height: 22px;
-    padding-right: 20px;
+    margin-top: 5px;
+    margin-right: 40px;
+
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
 }
 
 main {
     width: 100%;
     height: 550px;
 
-    text-align: center;
-
     color: #212121;
+
+
 }
 
 #login-form p {
+    display: flex;
+    justify-content: center;
+
     padding: 100px 0 0 0;
     color: whitesmoke;
     font-size: 50px;
+    font-weight: bold;
 }
 
 #login-form input {
@@ -84,8 +105,8 @@ main {
 #todo-form input {
     height: 50px;
     width: 40%;
-    margin: 0 auto;
-    padding: 10px 0;
+    margin: 20px auto;
+    padding: 10px 0 0 0;
 
     display: block;
     background: 0;
@@ -98,32 +119,77 @@ main {
     text-align: center;
 }
 
+#todo-list {
+    position: absolute;
+    left: 30%;
+
+    width: 40%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    color: whitesmoke;
+}
+
+#todo-list::-webkit-scrollbar {
+    display: none;
+}
+
+#todo-list li {
+    padding: 20px 0 0 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
+
+.button {
+    width: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+
+    color: whitesmoke;
+
+    cursor: pointer;
+}
+
 #greeting {
-    font-size: 100px;
+    text-align: center;
+    font-size: 50px;
+
+    color: whitesmoke;
 }
 
 #quote {
-    padding: 200px 0 0 0;
+    position: relative;
+    top: 35%;
 
-    color: #212121;
+    text-align: center;
+
+    color: #595858;
 }
 
 footer {
     width: 100%;
     height: 50px;
 
+    position: absolute;
+    top: 95%;
+    text-align: center;
+
     font-family: monospace;
     font-weight: lighter;
-    color: #EEEEEE;
-
-    text-align: center;
-}
-
-footer p {
-    display: inline;
+    color: #eeeeee30;
 }
 
 footer a {
     text-decoration: none;
-    color: #EEEEEE;
+    color: #eeeeee30;
 }
