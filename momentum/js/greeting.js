@@ -17,10 +17,13 @@ function onLoginSubmit(e) {
 }
 
 function printGreeting(username) {
-    greeting.innerText = `Hello, ${username}`;
+    greeting.innerText = `You got this, ${username} :)`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
+    greeting.className = "fade";
     todo.classList.remove(HIDDEN_CLASSNAME);
+    todo.className = "fade";
     loginForm.classList.add(HIDDEN_CLASSNAME);
+    quote.classList.add(HIDDEN_CLASSNAME);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
